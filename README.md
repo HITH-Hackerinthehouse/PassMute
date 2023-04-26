@@ -80,7 +80,8 @@ Here are some example commands those read passwords from a file, applies two tra
 ![Passmute-2](https://user-images.githubusercontent.com/67961316/234671617-675195a2-5d10-403a-996a-95b5805a93e1.jpg)
 
 
-**Multiple Password transmutation**: ``` python PassMute.py -f testwordlists.txt -r leet reverse -v -t 100 -o testupdatelists.txt ``` 
+**Multiple Password transmutation**: 
+``` python PassMute.py -f testwordlists.txt -r leet reverse -v -t 100 -o testupdatelists.txt ``` 
 
 
 ![Passmute-3](https://user-images.githubusercontent.com/67961316/234671689-54d00da4-90b9-41eb-9b17-bd067e39495e.jpg)
