@@ -60,7 +60,9 @@ Here's a brief explanation of the available options:
 ``` pip install argparse  ```  
 
 **Examples**
+
 Here are some example commands those read passwords from a file, applies two transformation rules, and saves the transformed passwords to an output file:
+
 
 **Single Password transmutation**: ``` python PassMute.py -p HITHHack3r -r leet reverse swapcase -v -t 50 ``` 
 
