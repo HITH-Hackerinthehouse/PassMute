@@ -1,6 +1,6 @@
 # PassMute a Password Trasmutation/Mutator tool
 
-This is a command-line tool written in Python that applies one or more transformation rules to a given password or a list of passwords read from one or more files. The tool can be used to generate transformed passwords for security testing or research purposes. Also while you do pentesting or bug hunting it will be very useful tool for you to brute force the passwords!!
+This is a command-line tool written in Python that applies one or more transmutation rules to a given password or a list of passwords read from one or more files. The tool can be used to generate transformed passwords for security testing or research purposes. Also, while you doing pentesting or bug hunting it will be very useful tool for you to brute force the passwords!!
 
 The transformation rules include:
 
@@ -20,36 +20,63 @@ The transformation rules include:
 
 The tool can also write the transformed passwords to an output file and run the transformation process in parallel using multiple threads.
 
+**Installation**
+```
+git clone https://HITH-Hackerinthehouse/PassMute.git
+```
+
+```
+cd PassMute
+```
+
+```
+chmod +x PassMute.py
+```
+
 **Usage**
 To use the tool, you need to have Python 3 installed on your system. Then, you can run the tool from the command line using the following options:
 ``` python PassMute.py [-h] [-f FILE [FILE ...]] -r RULES [RULES ...] [-v] [-p PASSWORD] [-o OUTPUT] [-t THREAD_TIMEOUT] [--max-threads MAX_THREADS] ``` 
 
 Here's a brief explanation of the available options:
 
--h, --help: shows the help message and exits
+-h or --help: shows the help message and exits
 
--f FILE [FILE ...], --file FILE [FILE ...]: one or more files to read passwords from
+-f (FILE) [FILE ...], --file (FILE) [FILE ...]: one or more files to read passwords from
 
--r RULES [RULES ...], --rules RULES [RULES ...]: one or more transformation rules to apply
+-r (RULES) [RULES ...] or --rules (RULES) [RULES ...]: one or more transformation rules to apply
 
--v, --verbose: prints verbose output for each password transformation
+-v or --verbose: prints verbose output for each password transformation
 
--p PASSWORD, --password PASSWORD: transforms a single password
+-p (PASSWORD) or --password (PASSWORD): transforms a single password
 
--o OUTPUT, --output OUTPUT: output file to save the transformed passwords
+-o (OUTPUT) or --output (OUTPUT): output file to save the transformed passwords
 
--t THREAD_TIMEOUT, --thread-timeout THREAD_TIMEOUT: timeout for threads to complete (in seconds)
+-t (THREAD_TIMEOUT) or --thread-timeout (THREAD_TIMEOUT): timeout for threads to complete (in seconds)
 
---max-threads MAX_THREADS: maximum number of threads to run simultaneously (default: 10)
+--max-threads (MAX_THREADS): maximum number of threads to run simultaneously (default: 10)
 
 
-**Example**
-Here's an example command that reads passwords from a file, applies two transformation rules, and saves the transformed passwords to an output file:
+**NOTE**: If you are getting any error regarding **argparse** module then simple install the module by following command:
+``` pip install argparse  ```  
 
-``` python PassMute.py -f passwords.txt -r leet uppercase -o transformed.txt ``` 
+**Examples**
+Here are some example commands those read passwords from a file, applies two transformation rules, and saves the transformed passwords to an output file:
+
+**Single Password transmutation**: ``` python PassMute.py -p HITHHack3r -r leet reverse swapcase -v -t 50 ``` 
+
+
+![Passmute-2](https://user-images.githubusercontent.com/67961316/234671617-675195a2-5d10-403a-996a-95b5805a93e1.jpg)
+
+
+**Multiple Password transmutation**: ``` python PassMute.py -f testwordlists.txt -r leet reverse -v -t 100 -o testupdatelists.txt ``` 
+
+
+![Passmute-3](https://user-images.githubusercontent.com/67961316/234671689-54d00da4-90b9-41eb-9b17-bd067e39495e.jpg)
+
+
+**Here Verbose and Thread are recommended to use in case you're transmutating big files and also it depends upon your microprocessor as well, it's not required every time to use threads and verbose mode.**
 
 
 **Legal Disclaimer**:
 
-You might be super excited to use this tool, me too. But here is the problem! whitehatsoumya or Github won't be responsible for any actions made by you. This tool is made for security research and education purposes only. It is the end user's responsibility to obey all applicable 
-local, state and federal laws. 
+You might be super excited to use this tool, we too. But here we need to confirm! whitehatsoumya, Hackerinthehouse, and Github won't be responsible for any actions made by you. This tool is made for security research and educational purposes only. It is the end user's responsibility to obey all applicable local, state and federal laws. 
