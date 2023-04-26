@@ -2,6 +2,16 @@
 
 This is a command-line tool written in Python that applies one or more transmutation rules to a given password or a list of passwords read from one or more files. The tool can be used to generate transformed passwords for security testing or research purposes. Also, while you doing pentesting or bug hunting it will be very useful tool for you to brute force the passwords!!
 
+
+**Proof of Brute Force Passwords by using PassMute**
+
+![Passmute-4](https://user-images.githubusercontent.com/67961316/234674770-1dc87806-4b23-41d4-85b3-0009fe8ac7c1.jpg)
+
+
+**How Passmute can also help to secure our passwords more?**
+
+PassMute can help to generate strong and complex passwords by applying different transformation rules to the input password. However, password security also depends on other factors such as the length of the password, randomness, and avoiding common phrases or patterns.
+
 The transformation rules include:
 
 **reverse:** reverses the password string
