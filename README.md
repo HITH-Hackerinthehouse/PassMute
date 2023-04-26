@@ -5,11 +5,17 @@ This is a command-line tool written in Python that applies one or more transform
 The transformation rules include:
 
 **reverse:** reverses the password string
+
 **uppercase:** converts the password to uppercase letters
+
 **lowercase:** converts the password to lowercase letters
+
 **swapcase:** swaps the case of each letter in the password
+
 **capitalize:** capitalizes the first letter of the password
+
 **leet:** replaces some letters in the password with their leet equivalents
+
 **strip:** removes all whitespace characters from the password
 
 The tool can also write the transformed passwords to an output file and run the transformation process in parallel using multiple threads.
@@ -20,7 +26,7 @@ To use the tool, you need to have Python 3 installed on your system. Then, you c
 
 Here's a brief explanation of the available options:
 
-**-h, --help: shows the help message and exits
+-h, --help: shows the help message and exits
 
 -f FILE [FILE ...], --file FILE [FILE ...]: one or more files to read passwords from
 
@@ -34,7 +40,7 @@ Here's a brief explanation of the available options:
 
 -t THREAD_TIMEOUT, --thread-timeout THREAD_TIMEOUT: timeout for threads to complete (in seconds)
 
---max-threads MAX_THREADS: maximum number of threads to run simultaneously (default: 10)**
+--max-threads MAX_THREADS: maximum number of threads to run simultaneously (default: 10)
 
 
 **Example**
