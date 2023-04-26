@@ -45,6 +45,7 @@ chmod +x PassMute.py
 
 **Usage**
 To use the tool, you need to have Python 3 installed on your system. Then, you can run the tool from the command line using the following options:
+
 ``` python PassMute.py [-h] [-f FILE [FILE ...]] -r RULES [RULES ...] [-v] [-p PASSWORD] [-o OUTPUT] [-t THREAD_TIMEOUT] [--max-threads MAX_THREADS] ``` 
 
 Here's a brief explanation of the available options:
