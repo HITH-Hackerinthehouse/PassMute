@@ -93,4 +93,4 @@ Here are some example commands those read passwords from a file, applies two tra
 
 **Legal Disclaimer**:
 
-You might be super excited to use this tool, we too. But here we need to confirm! whitehatsoumya, Hackerinthehouse, and Github won't be responsible for any actions made by you. This tool is made for security research and educational purposes only. It is the end user's responsibility to obey all applicable local, state and federal laws. 
+You might be super excited to use this tool, we too. But here we need to confirm! Hackerinthehouse, any contributor of this project and Github won't be responsible for any actions made by you. This tool is made for security research and educational purposes only. It is the end user's responsibility to obey all applicable local, state and federal laws. 
