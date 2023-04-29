@@ -67,7 +67,7 @@ Here's a brief explanation of the available options:
 --max-threads (MAX_THREADS): maximum number of threads to run simultaneously (default: 10)
 
 
-**NOTE**: If you are getting any error regarding **argparse** module then simple install the module by following command:
+**NOTE**: If you are getting any error regarding **argparse** module then simply install the module by following command:
 ``` pip install argparse  ```  
 
 **Examples**
